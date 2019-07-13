@@ -1,0 +1,434 @@
+@import url("link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet);
+
+:root {
+  --tomato-color: #002f49;
+  --yellow-color: #ffb347;
+  --megenta-color:#002f49;
+  --lime-color:#002f49;
+  --light-orange: #ff6215;
+  --font-family: 'Rubik', sans-serif;
+  --font-family: 'Rubik', sans-serif;
+  --font-family: 'Rubik', sans-serif;
+  --font-family: 'Rubik', sans-serif;
+}
+/*              Homepage Design             */
+
+
+.heading .h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 10vmin;
+  padding-top: 17vmin;
+  color: #d9d9d9;
+}
+
+.heading .h1 + span {
+  color: var(--yellow-color);
+}
+
+.heading .p {
+  padding: 0em 13vmin;
+  color: rgb(70, 65, 65);
+  font-size: 3.5vmin;
+  font-family: 'Rubik', sans-serif;
+}
+
+.heading > .btn1,
+.btn2 {
+  
+  margin: 2vmin 2.5vmin;
+  background: #002f49;
+  font-size: 3vmin;
+  font-family: 'Rubik', sans-serif;
+  color: #d9d9d9;
+  display:inline-block;
+  margin-top: 20px;
+}
+
+
+ .highDay, .lowDay, .twentyfourpricechange, .currentvolume , .time, .crypto {
+  color: #d9d9d9;
+  display: inline;
+  font-size: 1.5rem;
+}
+
+
+.price {
+color: red;
+  display: inline;
+  font-size: 3rem;
+  padding-bottom: 25px;
+}
+
+
+.heading {
+  margin-bottom: 20vmin;
+  background: #0f2862;
+}
+
+
+/*/              Homepage Design             /*/
+
+/*                     Section 2                          */
+
+.section_2 h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 8vmin;
+  color: #0f2862;
+}
+
+.section_2 .crypto {
+  padding: 9.4vmin 1vmin;
+  font-size: 2.2vmin;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  text-align: justify;
+ 
+}
+
+.section_2 .progress-one,
+.progress-two,
+.progress-three {
+  padding: 1vmin 12vmin;
+  position: relative;
+}
+
+.section_2 .caption {
+  position: relative;
+  top: 2.2em;
+  left: 48%;
+  margin-bottom: 3em;
+  font-size: 1em;
+  border-radius: 0.5em;
+  width: 60px;
+  background-color: var(--tomato-color);
+  color: white;
+}
+.section_2 .caption::after {
+  content: " ";
+  position: absolute;
+  top: 1.4em;
+  left: 2em;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--tomato-color);
+}
+
+.section_2 .progress-curcle::before {
+  content: " ";
+  position: absolute;
+  border: 6px solid lightblue;
+  border-radius: 1em;
+  left: 56%;
+}
+
+.section_2 .progress-two .caption {
+  left: 73%;
+}
+
+.section_2 .progress-two .progress-curcle::before {
+  left: 72%;
+}
+
+.section_2 .progress-three .caption {
+  left: 73%;
+}
+
+.section_2 .progress-three .progress-curcle::before {
+  left: 72%;
+}
+
+/*          Progress bar Coloring                 */
+
+.section_2 .progress-one .progress-bar {
+  background: #005995;
+}
+
+.section_2 .progress-two .progress-bar {
+  background: #005995;
+}
+
+.section_2 .progress-three .progress-bar {
+  background: #005995;
+}
+
+.section_2 .pro-details {
+  color: red;
+  font-size: 2rem;
+  padding: 4vmin 0;
+}
+
+.section_2 .progress-two .pro-details {
+  color: var(--lime-color);
+}
+
+.section_2 .progress-three .pro-details {
+  color: var(--megenta-color);
+}
+
+.section_2 div:last-child {
+  padding-bottom: 5vmin;
+}
+
+/*/                   Section 2                   /*/
+
+/*                      Section 3                         */
+
+.section_3 {
+  background: #0f2862;
+  margin-bottom: 4vmin;
+}
+
+.section_3 .projects h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  color: whitesmoke;
+  padding-top: 7vmin;
+}
+
+.section_3 .projects p {
+  font-family: 'Rubik', sans-serif;
+  padding: 3vmin 0;
+  color: rgb(232, 242, 243);
+  font-size: 1.3rem;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+display: flex;
+max-width:100%;
+max-height:100%;
+transition: 0.4s ease-in;
+}
+
+
+.text {
+  color: white;
+   border-radius: 15px;
+  background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.397);
+  font-size: 1.8rem;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+
+/*                        Section 4                         */
+
+.section_4 .services h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3em;
+  color: #0f2862;
+  padding: 1em 0 0.6em 0;
+}
+
+.section_4 .developertext{
+ font-size: 1em;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  text-align: center;
+  padding: 0.9em;
+}
+.section_4 .services > p {
+  font-size: 1em;
+  font-family: 'Rubik', sans-serif;
+}
+.section_4 .services .cards {
+  padding: 3em;
+  padding-top: 0em;
+}
+.section_4 .services .cards i {
+  padding: 1em;
+}
+.section_4 .services .cards h3 {
+  font-family: 'Rubik', sans-serif;
+}
+.section_4 .services .cards > p {
+  padding: 0.4em;
+}
+
+.section_4 .services .cards:first-child i,
+.cards:first-child h3 {
+  color: var(--tomato-color);
+}
+.section_4 .services .cards:nth-child(2) i,
+.cards:nth-child(2) h3 {
+  color: var(--lime-color);
+}
+.section_4 .services .cards:nth-child(3) i,
+.cards:nth-child(3) h3 {
+  color: var(--megenta-color);
+}
+.section_4 {
+  margin-bottom: 5em;
+}
+
+/*                      Section 5                 */
+.section_5 {
+  background: #0f2862;
+}
+
+.section_5 div h1 {
+  padding: 8vmin 0em;
+}
+
+.section_5 div p {
+  font-size: 1.3rem;
+  padding: 0 2vmin;
+}
+
+.section_5 .Team h1,
+.section_5 .Team p {
+  color: whitesmoke;
+  font-family: 'Rubik', sans-serif;
+}
+
+.section_5 .Team .member {
+  margin-top: 10vmin;
+  justify-content: center;
+}
+
+.section_5 .Team .member:nth-child(1) {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.section_5 .Team .member:nth-child(1) img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.section_5 .Team .member:nth-child(2) {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ 
+}
+.section_5 .Team .member:nth-child(2) img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 50%;
+}
+.section_5 .Team .member:nth-child(3) {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.section_5 .Team .member:nth-child(3) img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.section_5 .Team .member .details {
+  padding: 1vmin;
+}
+.section_5 .Team .member .details h4 {
+  color: whitesmoke;
+}
+.section_5 .Team .member .details > * {
+  color: lightblue;
+  font-family: 'Rubik', sans-serif;
+}
+
+.Team {
+  padding-bottom: 10vmin;
+}
+
+/*                        Section 7                       */
+
+.section_6 {
+  padding: 5vmin 2vmin;
+   text-decoration: none;
+  
+}
+
+.footer .footertext{
+  font-size: .8rem;
+   text-decoration: none;
+}
+
+.section_6 .footer {
+  padding: 0 10vmin;
+   text-decoration: none;
+}
+.section_6 .footer label {
+  font-size: 1.8em;
+  color: whitesmoke;
+   text-decoration: none;
+}
+
+.section_6 .footer ul li {
+  color: #d3d0cb;
+  font-size: 1em;
+   text-decoration: none;
+}
+.footerbottom p {
+ margin: 0 70px;
+ text-align:center;
+ display:inline-block;
+ padding-top: 20px;
+ width:200px;
+ height:60px;
+  flex-direction: row;
+  font-weight: bold;
+  color: #002f49;
+  font-size: .8em;
+   text-decoration: none;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  
+  .section_1 {
+    background: url("Stock/Background-4959.jpeg");
+    background-size: cover;
+  }
+  .section_1 .p {
+    color: #e5e5e5;
+  }
+  .section_2 {
+    margin-top: 5vmin;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .services {
+    margin-top: 25vmin;
+  }
+  .section_5 .Team .member:nth-child(3) {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section_4 .services {
+    margin-top: 330vmin;
+  }
+}
