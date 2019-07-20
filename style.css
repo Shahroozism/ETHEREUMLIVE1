@@ -276,6 +276,30 @@ transition: 0.4s ease-in;
 }
 
 /*                      Section 5                 */
+
+ .tutorial {
+   text-align: left;
+   font-size: 1em;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  padding: 0.9em;
+  list-style-type: none;
+ }
+
+
+.tutorial_head {
+ text-align: left;
+   font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+  color: #005995;
+  padding: 0.9em;
+  list-style-type: none;
+}
+
+
+
 .section_5 {
   background: #0f2862;
 }
