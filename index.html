@@ -228,7 +228,66 @@
         </div>
       </div>
     </section>
+<section class="section_4 container-fluid p-0">
+      <div class="d-flex flex-column text-center services" id="d-flex flex-column text-center services">
+        <div>
+          <h1>Learn How to Query & Monitor Ethereum Contracts</h1>
+        </div>
+         <p class="developertext">
+                    With <a href="https://web3js.readthedocs.io/en/1.0/getting-started.html">Web3.js</a>, you can query and listen for smart contract events on the Ethereum blockchain so that you can specify actions to trigger when certain criteria are met. The smart contract example we develop in this blog post use the <a href="https://infura.io/product">Infura API</a>, <a href="https://etherscan.io/">Etherscan API</a>, and <a href="https://weth.io/">Wrapped ETH</a>. Infura is a hosted Ethereum node cluster that lets users run their application without requiring them to set up their own Ethereum node or wallet. You may not be familiar with Infura by name, but if you've used </a> <a href="https://metamask.io/">MetaMask </a> then you've probably have used Infura, as it is the Ethereum provider that powers MetaMask. We'll then find an example smart contract address on Etherscan, a API that lets you explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities. Finally, we apply the Wrapped ETH because it has a high volume of transcactions and makes it a great point of reference to use for texting event listening. 
 
+
+<h2 class="tutorial"> Here’s what will be covered: </h2>
+
+<ul class="tutorial">
+ <a href="#section0"><li>Setting up the Smart Contract</li></a> 
+  <a href="#section1"><li>Event Query</li></a> 
+  <a href="#section2"><li>Query Past Events with getPastEvents()</li></a> 
+  <a href="#section3"><li>Create an Event Listener for a Specific Event Type</li></a> 
+  <a href="#section4"><li>Event Content</li></a> 
+  <a href="#section5"><li>Sample Output</li></a> 
+</ul>
+
+                    </p><section id="section0">
+                    <h2 class="tutorial_head"> Setting up the Contract </h2>
+                    <p class="tutorial"> You must instantiate a smart contract before you can query events for it. </p></section>
+
+        <script src="https://gist.github.com/Shahroozism/0d2574258d3b59c14a94e3f323e67aae.js"></script>
+<section id="section1">
+        <h2 class="tutorial_head"> Making a Event Query</h2>
+                    <p class="tutorial"> There are two primary use cases for interacting with Ethereum contract events. You can:
+you can monitor and query a smart contract's events or a user can create an event lisener for a smart contract's events to specify particular actions you want to trigger. 
+</p></section>
+
+<section id="section2">
+<h2 class="tutorial_head"> Query Past Events with getPastEvents() </h2>
+                  <p class="tutorial"> Use Web3 to query all past events that a smart contract has emitted. The getPastEvents() will return the events all-in-one-shot. It will return an array of the events fired in the past.It will return an array of the events fired in the past. However it is currently limited to one thousand results at a time - getPastEvents() will return an error if more results would be returned.The first argument allows you to specify the event type to query, or allEvents to return all event types. The second argument is a filter object that allows you to filter by start1 and end block as shown below: </p> </section>
+
+        <script src="https://gist.github.com/Shahroozism/5cf1e4c129ced3980e4517d1252c5950.js"></script>
+        <p class="tutorial"> You need to instantiate a contract before you can query events for it. </p>
+
+       <script src="https://gist.github.com/Shahroozism/9e3abb4c44e5e0bf1c4038e1885eae37.js"></script>
+<section id="section3">
+      <h2 class="tutorial_head"> Create an Event Listener for a Contract’s Events</h2>
+                    <p class="tutorial"> 
+                      Use contract.events.allEvents() to create en event listening to upcoming events, and to also specify a callback that'll occur when the event is emitted. 
+ </p> </section>
+
+       <script src="https://gist.github.com/Shahroozism/a63caf1801d4b9e836889c4f0953eef0.js"></script>
+
+<section id="section4">
+      <h2 class="tutorial_head">Create an Event Listener for a Specific Event Type</h2>
+                    <p class="tutorial"> Use contract.events.EventName() to specify actions for specific event type. For example, Transfer </p> </seciton>
+
+      <script src="https://gist.github.com/Shahroozism/8d545dbb7356f7833d9725b8fee26008.js"></script>
+
+<section id="section5">
+       <h2 class="tutorial"> Final Output!</h2> </section>              
+<script src="https://gist.github.com/Shahroozism/467f8b75ce0b6ebde919c1dcf4ae9abb.js"></a></script>
+
+        </div>
+      </div>
+    </section>
     <!-- ************************************ /Section 4 ************************************* -->
 
     <!-- ************************************ Section 5 ************************************* -->
@@ -305,5 +364,8 @@ Please note, weighted average exchange prices update very slowly for some ETH an
  <script src="https://kit.fontawesome.com/b10106b3ee.js"></script>
   </body>
 </html>
+
+
+
 
 
