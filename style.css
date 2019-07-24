@@ -19,6 +19,7 @@
   font-size: 10vmin;
   padding-top: 17vmin;
   color: #d9d9d9;
+  
 }
 
 .heading .h1 + span {
@@ -285,6 +286,7 @@ transition: 0.4s ease-in;
   color: black;
   padding: 0.9em;
   list-style-type: none;
+  overflow: hidden;
  }
 
 
@@ -296,6 +298,7 @@ transition: 0.4s ease-in;
   color: #005995;
   padding: 0.9em;
   list-style-type: none;
+  
 }
 
 
@@ -386,6 +389,8 @@ transition: 0.4s ease-in;
 
 /*                        Section 7                       */
 
+
+
 .section_6 {
   padding: 5vmin 2vmin;
    text-decoration: none;
@@ -424,7 +429,68 @@ transition: 0.4s ease-in;
   color: #002f49;
   font-size: .8em;
    text-decoration: none;
+}
 
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  //width: 250px;
+  background-color:white;
+  text-align: center;
+  background-color: #bbb;
+border-radius: 10% / 50%;
+  background-clip: padding-box;
+  padding: 20px 20px;
+  position: absolute;
+  font-family: 'Rubik', sans-serif;
+  z-index: 1;
+  bottom: 45%;
+  right: 2%;
+  margin-left: 30px;
+  font-size: 3.2vmin;
+  font-weight: bold;
+ 
+}
+
+
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  font-family: 'Rubik', sans-serif;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 
@@ -433,26 +499,33 @@ transition: 0.4s ease-in;
   .section_1 {
     background: url("Stock/Background-4959.jpeg");
     background-size: cover;
+   
   }
   .section_1 .p {
     color: #e5e5e5;
+   
   }
   .section_2 {
     margin-top: 5vmin;
+ 
   }
+  
 }
 
 @media only screen and (max-width: 425px) {
   .services {
     margin-top: 25vmin;
+   
   }
   .section_5 .Team .member:nth-child(3) {
     width: 50%;
+
   }
 }
 
 @media only screen and (max-width: 320px) {
   .section_4 .services {
-    margin-top: 330vmin;
+   // margin-top: 330vmin;
+
   }
 }
