@@ -5,9 +5,9 @@ var crypto= object.description.en;
 var price = object.market_data.current_price.usd;
 var highDay = object.market_data.high_24h.usd;
 var lowDay = object.market_data.low_24h.usd;
-var currentvolume = object.tickers[0].volume;
+
 var time = object.tickers[0].timestamp;
-var twentyfourpricechange = object.market_data.price_change_percentage_24h;
+
 var symbol = "https://assets.coingecko.com/coins/images/279/small/ethereum.png";
 $(".symbol").attr("src", symbol);
 
@@ -19,6 +19,11 @@ $(".currentvolume").append(currentvolume);
 $(".time").append(time);
 $(".twentyfourpricechange").append(twentyfourpricechange);
 });
+
+$(".open").on("click", function() {
+  $(".popup-overlay, .popup-content").addClass("active");
+});
+
 
 
 
