@@ -58,12 +58,19 @@
       <p class="highDay">24h High <span class="ep-symbol">$</span></p>
       <img class="symbol">
       <p class="lowDay">24h Low </p>
-      <img class="symbol">
-      <p class="twentyfourpricechange"> 24h % Change</p>
-      <img class="symbol">
-      <p class="currentvolume">Current Volume</p><br><br>
+    
+      
       </div>
-          <button type="button" class="btn btn1 btn-primary">BUY ETHEREUM</button>
+          <button type="button" class="btn btn1 btn-primary"><div class="popup" onclick="myFunction()">Crypto Radio 24 | All the Time
+  <span class="popuptext" id="myPopup"><a href="http://cryptoradio.io/" target="_blank">Click Here to Listen! </a> </span></button>
+
+</div>
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
     
         </div>
       </div>
@@ -231,7 +238,7 @@
 <section class="section_4 container-fluid p-0">
       <div class="d-flex flex-column text-center services" id="d-flex flex-column text-center services">
         <div>
-          <h1>Learn How to Query & Monitor Ethereum Smart Contracts</h1>
+          <h1>Learn How to Query & Monitor Ethereum Contracts</h1>
         </div>
          <p class="developertext">
                     With <a href="https://web3js.readthedocs.io/en/1.0/getting-started.html">Web3.js</a>, you can query and listen for smart contract events on the Ethereum blockchain so that you can specify actions to trigger when certain criteria are met. The smart contract example we develop in this blog post use the <a href="https://infura.io/product">Infura API</a>, <a href="https://etherscan.io/">Etherscan API</a>, and <a href="https://weth.io/">Wrapped ETH</a>. Infura is a hosted Ethereum node cluster that lets users run their application without requiring them to set up their own Ethereum node or wallet. You may not be familiar with Infura by name, but if you've used </a> <a href="https://metamask.io/">MetaMask </a> then you've probably have used Infura, as it is the Ethereum provider that powers MetaMask. We'll then find an example smart contract address on Etherscan, a API that lets you explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities. Finally, we apply the Wrapped ETH because it has a high volume of transcactions and makes it a great point of reference to use for texting event listening. 
@@ -329,6 +336,8 @@ you can monitor and query a smart contract's events or a user can create an even
         </div>
     </section>
 
+    
+
     <!-- ************************************ /Section 5 ************************************* -->
 
 
@@ -337,7 +346,6 @@ you can monitor and query a smart contract's events or a user can create an even
      <section class="section_6 bg-dark">
          <div class="d-sm-flex flex-row text-white">
              <div class="footer">
-                 <label for="Prod">ETHEREUMLIVE.COM</label>
                  <p class="footertext"> 
 This website is intended to provide a clear summary of Ethereum's current price as well as important updates from the industry. Prices are updated every second in real-time. Bookmark us!<br><br>
 
@@ -364,6 +372,9 @@ Please note, weighted average exchange prices update very slowly for some ETH an
  <script src="https://kit.fontawesome.com/b10106b3ee.js"></script>
   </body>
 </html>
+
+
+
 
 
 
